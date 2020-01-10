@@ -21,6 +21,9 @@ Copy the `activate.example` file to your project and rename it `activate`.
 #### To use **createmd**
 
 ```bash
+# Pull the image
+docker-compose pull
+
 # Activate Drydock
 . activate
 
@@ -28,7 +31,7 @@ Copy the `activate.example` file to your project and rename it `activate`.
 createmd --in config.yaml --templates templates/
 ```
 
-Running the above command will copy any files in the `/templates` directory, duplicating the template directory structure, into the current directory, replacing variables in the templates with the values from the `--in` file. You can also specify a directory in which to output the files using the `--out` option.
+Running the above command will copy any files in the `templates/` directory, duplicating the template directory structure, into the current directory, replacing variables in the templates with the values from the `--in` file. You can also specify a directory in which to output the files using the `--out` option.
 
 ## Authors
 
